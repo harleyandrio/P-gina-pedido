@@ -48,6 +48,13 @@
         function mostrarResposta() {
             document.getElementById('resposta').style.display = 'block';
             document.getElementById('resposta').innerHTML = 'Sim! Eu aceito, meu amor. ❤️';
+            const link = document.createElement('a');
+            link.href = 'https://wa.me/qr/W3STQYITRO4UK1>?text=Eu+aceito+seu+pedido+de+namoro%21';
+            link.target = '_blank';
+            link.innerHTML = 'Enviar mensagem no WhatsApp';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
 
         function mudarPosicao() {
